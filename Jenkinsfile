@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'update-setup-jenkins', url: 'https://github.com/dryuxxinn/ProjectDevOps.git'
+                git branch: 'feature/update', url: 'https://github.com/dryuxxinn/ProjectDevOps.git'
             }
         }
 
@@ -32,3 +32,4 @@ pipeline {
         }
     }
 }
+
