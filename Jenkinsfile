@@ -18,7 +18,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 echo 'Starting Docker container...'
-                bat 'docker run -d -p 8080:80 --name projectdevops projectdevops:latest'
+                bat 'docker run -d -p 8081:80 --name projectdevops projectdevops:latest'
             }
         }
     }
@@ -32,4 +32,5 @@ pipeline {
         }
     }
 }
+
 
