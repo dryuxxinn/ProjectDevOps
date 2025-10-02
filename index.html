@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
+    <title>DevOps Pipeline Test</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Testing Automation Deployment</p>
+    <div class="container">
+        <header>
+            <h1>Deployment Successful! ✅</h1>
+        </header>
+        <main>
+            <p class="subtitle">
+                This web page was deployed automatically using a Jenkins CI/CD pipeline.
+            </p>
+            <div class="status-box">
+                <p><strong>Status:</strong> Online</p>
+                <p><strong>Version:</strong> 1.0.0</p>
+                <p id="timestamp"></p>
+            </div>
+            <div class="tech-logos">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" alt="Jenkins">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker">
+            </div>
+        </main>
+        <footer>
+            <p>DevOps Project - 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Menampilkan waktu deploy (waktu saat halaman dimuat)
+        const timestampElement = document.getElementById('timestamp');
+        const now = new Date();
+        timestampElement.textContent = `Deployed on: ${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+    </script>
 </body>
 </html>
